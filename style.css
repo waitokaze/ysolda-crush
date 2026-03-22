@@ -20,7 +20,7 @@ p {
 html {
   timeline-scope: --foot-lowering, --cracking-bones, --crushed;
   scrollbar-width: none;
-  overscroll-bnhavior: none;
+  overscroll-behavior: none;
 }
 
 body {
