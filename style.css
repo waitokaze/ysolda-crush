@@ -1,0 +1,60 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.light.min.css";
+@import url("https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Frijole&family=Creepster&display=swap");
+
+@import "styles/foot-lowering.css";
+@import "styles/foot-stomp.css";
+@import "styles/cracking-bones.css";
+@import "styles/crushed.css";
+
+@function --scale(--length <length>: 1cm) {
+  result: calc(var(--length) / 0.029);
+}
+
+p {
+  position: fixed;
+  color: white;
+  font-weight: 900;
+}
+
+html {
+  timeline-scope: --foot-lowering, --cracking-bones, --crushed;
+  scrollbar-width: none;
+}
+
+body {
+  display: grid;
+  grid-template:
+    "foot-lowering" --scale(5cm)
+    "foot-stomp" --scale(2cm)
+    "cracking-bones" --scale(4cm)
+    "crushed" --scale(1cm);
+}
+
+#foot-lowering {
+  grid-area: foot-lowering;
+  view-timeline: --foot-lowering block;
+}
+
+#foot-stomp {
+  grid-area: foot-stomp;
+}
+
+#cracking-bones {
+  grid-area: cracking-bones;
+  view-timeline: --cracking-bones;
+}
+
+#crushed {
+  grid-area: crushed;
+  view-timeline: --crushed;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

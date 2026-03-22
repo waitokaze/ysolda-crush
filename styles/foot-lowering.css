@@ -1,0 +1,38 @@
+.foot-container {
+  grid-area: 1 / 1 / -1 / -1;
+  perspective: 30cm;
+  position: sticky;
+  inset-block-start: 0;
+  inset-inline: 0;
+  block-size: 100dvh;
+
+  #ysolda-foot {
+    transform-style: preserve-3d;
+    position: fixed;
+    block-size: 21cm;
+    inset-block-start: 50%;
+    inset-inline-start: 48%;
+    animation: lower-foot forwards;
+    animation-timeline: --foot-lowering;
+    will-change: translate;
+  }
+}
+
+@keyframes lower-foot {
+  0% {
+    filter: brightness(1);
+    translate: -50% -50% 0;
+  }
+  30%,
+  40% {
+    filter: brightness(1.1);
+    translate: -50% -50% -50cm;
+  }
+  60% {
+    filter: brightness(1);
+  }
+  100% {
+    filter: brightness(0.3) contrast(2);
+    translate: -50% -40% 28cm;
+  }
+}

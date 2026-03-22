@@ -1,0 +1,85 @@
+.cracking-sound {
+  opacity: 0;
+  animation: appear forwards;
+  animation-timeline: --cracking-bones;
+  font-family: 'Frijole';
+}
+
+.crick {
+  animation-range: 0% 2%;
+}
+.crack {
+  animation-range: 14% 16%;
+}
+.craaak {
+  animation-range: 28% 30%;
+}
+.kriick {
+  animation-range: 42% 44%;
+}
+.kronch {
+  animation-range: 56% 58%;
+}
+.krrrack {
+  animation-range: 70% 72%;
+}
+.kraaakkh {
+  animation-range: 84% 86%;
+}
+
+
+.light {
+  font-size: 3vw;
+
+  &.crick {
+    inset-inline-start: 20%;
+    inset-block-start: 30%;
+    rotate: 10deg;
+  }
+
+  &.crack {
+    inset-inline-end: 20%;
+    inset-block-end: 30%;
+    rotate: 12deg;
+  }
+}
+
+.medium {
+  font-size: 5vw;
+
+  &.craaak {
+    inset-inline-end: 18%;
+    inset-block-start: 35%;
+    rotate: -5deg;
+  }
+
+  &.kriick {
+    inset-inline-start: 18%;
+    inset-block-end: 35%;
+    rotate: -8deg;
+  }
+}
+
+.hard {
+  font-size: 7vw;
+
+  &.kronch {
+    inset-inline-start: 40%;
+    inset-block-start: 15%;
+    rotate: -20deg;
+  }
+
+  &.kraaakkh {
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    rotate: 3deg;
+    font-size: 9vw;
+  }
+
+  &.krrrack {
+    inset-inline-end: 26%;
+    inset-block-end: 15%;
+    rotate: 12deg;
+  }
+}
