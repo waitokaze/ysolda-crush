@@ -2,7 +2,7 @@
   opacity: 0;
   translate: 0 0 30cm;
   block-size: 100lvh;
-  justify-items: enter;
+  justify-items: center;
   align-content: center;
   background: linear-gradient(to bottom, #BC0000 20%, #8B0000 50%, #480607 100%);
   animation: appear forwards;
