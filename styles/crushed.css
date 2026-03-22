@@ -7,7 +7,7 @@
   background: linear-gradient(to bottom, #BC0000 20%, #8B0000 50%, #480607 100%);
   animation: appear forwards;
   animation-timeline: --crushed;
-  animation-range: 99.9% 100%;
+  animation-range: 98% 100%;
   
   p {
     position: static;
